@@ -1,0 +1,6 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.99",
+        "doctrine/cache": "^1.8"
+    }
+}

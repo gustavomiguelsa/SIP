@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>SIP</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> <!-- iso-8859-1 -->    
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="viewer/build/three.min.js"></script>
+	<script src="viewer/js/loaders/DDSLoader.js"></script>
+	<script src="viewer/js/loaders/MTLLoader.js"></script>
+	<script src="viewer/js/loaders/OBJMTLLoader.js"></script>
+	<script src="viewer/js/Detector.js"></script>
+	<script src="viewer/js/libs/stats.min.js"></script>
+	
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script>
+	window.onload = function() {
+		$('#main-c').load('garage.php');
+		return null;
+	}
+</script>
+
+<body>
+	<img src="logo.png" alt="logo">
+
+	<div class="main-container" id="main-c">
+		
+	</div>
+
+	
+
+	<nav class="navbar navbar-default navbar-fixed-left">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="#" onclick="$('#main-c').load('garage.php')">Home</a></li>
+				<li><a href="#" onclick="$('#main-c').load('about.php')">About</a></li>
+
+				<div class="dropdown">
+					<button class="dropbtn">Statistics</button>
+					<div class="dropdown-content">
+						<a href="#" onclick="$('#main-c').load('daily.php')">Daily</a>
+						<a href="#" onclick="$('#main-c').load('weekly.php')">Weekly</a>
+						<a href="#" onclick="$('#main-c').load('monthly.php')">Monthly</a>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	
+	<footer class="footer" role="contentinfo">
+		<div class="container-fluid">
+			<p><font size="2"> © 2019 Hacktive Solutions </font></p>
+		</div>
+	</footer>
+</body>
+</html>
